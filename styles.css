@@ -121,3 +121,41 @@ h3 {
 #join-now {
     margin-top: 30px;
 }
+
+main {
+    border: 3px solid bisque;
+    height: 1000px;
+}
+
+.top-container {
+    background-color:#A9A19E;
+    height: 612px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-container-left-text {
+    width: 50%;
+}
+
+.top-container-right-text {
+    width: 50%;
+}
+
+.top-container-paragraph {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.mid-container {
+
+}
+
+.bottom-container {
+    height: 680px;
+    background-color: #FAB131;
+    ;
+}
