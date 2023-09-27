@@ -13,7 +13,6 @@ body {
 
 header {
     border: 3px solid black;
-    height: 711px;
 }
 
 .main-container {
@@ -28,7 +27,7 @@ header {
 
 .left-container {
     background-color: lightblue;
-    background-image: url(https://raw.githubusercontent.com/JoelKeskitalo/Layoutprojekt/main/family.png);
+    background-image: url(https://raw.githubusercontent.com/JoelKeskitalo/Layoutprojekt/main/Bilder/family.png);
     background-position: right bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,6 +90,24 @@ h3 {
     align-items: center;
 }
 
+h4 {
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: -2;
+    margin-left: 180px;
+    margin-top: 100px;
+}
+
+h5 {
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -2%;
+}
+
 .left-text {
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
@@ -128,34 +145,85 @@ main {
 }
 
 .top-container {
-    background-color:#A9A19E;
+    background-color: #A9A19E;
     height: 612px;
-    padding: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-.top-container-left-text {
+.top-container-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Flytta innehållet åt höger i denna container */
+}
+
+.top-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 50%;
 }
 
-.top-container-right-text {
+.top-container-right {
+    display: flex;
+    justify-content: center;
     width: 50%;
 }
 
 .top-container-paragraph {
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
+    width: 50%;
     font-size: 14px;
     line-height: 24px;
+    margin-top: 100px;
 }
 
-.mid-container {
+.menu-container {
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+ul {
+    border: 3px solid green;
+    list-style: none;
+    gap: 120px;
+    display: flex;
+
+    
 }
 
 .bottom-container {
     height: 680px;
     background-color: #FAB131;
-    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+.about-us-text {
+    width: 442px;
+    height: 280px;
+}
+
+
+button {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    width: 131px;
+    height: 39px;
+    border-radius:100px;
+}
+
+
+#join-now {
+    margin-left: 180px;
+}
+
+
