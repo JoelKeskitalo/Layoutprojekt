@@ -13,16 +13,11 @@ body {
     position: relative;
 }
 
-header {
-    border: 3px solid black;
-}
-
 main {
     flex-grow: 1;
 }
 
 .main-container {
-    border: 3px solid green;
     display: flex;
     height: 544px;
 }
@@ -145,6 +140,10 @@ h5 {
     margin-top: 30px;
 }
 
+#join-now2 {
+    margin-left: 170px;
+}
+
 
 .top-container {
     background-color: #A9A19E;
@@ -177,7 +176,6 @@ h5 {
 }
 
 .menu-container {
-    border: 3px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +183,6 @@ h5 {
 
 
 ul {
-    border: 3px solid green;
     list-style: none;
     gap: 120px;
     display: flex;
@@ -195,6 +192,7 @@ ul {
 
 .bottom-container {
     height: 680px;
+    padding: 50px 0 0 0;
     background-color: #FAB131;
     display: flex;
     flex-direction: column;
@@ -269,3 +267,29 @@ button {
 }
 
 
+.overlap-containers {
+    display: flex;
+    justify-content: center;
+    margin-top: -154px;
+    margin-bottom: -154px;
+}
+
+.faces {
+    background-color: white;
+    height: 308px;
+    width: 256px;
+}
+
+.face-image {
+    width: 236px;
+    height: 150px;
+    margin: -15px auto 0;
+}
+
+.face-1 .face-image {
+    background-image: url(https://raw.githubusercontent.com/JoelKeskitalo/Layoutprojekt/mainbox/Bilder/child.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+    background-color: lightblue;
+}
