@@ -2,17 +2,23 @@ body {
     background-color: white;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
 }
 
 .big-container {
     max-width: 1000px; 
     width: 100%;
     box-sizing: border-box;
+    flex-direction: column; 
+    min-height: 100vh;
+    position: relative;
 }
 
 header {
     border: 3px solid black;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .main-container {
@@ -139,10 +145,6 @@ h5 {
     margin-top: 30px;
 }
 
-main {
-    border: 3px solid bisque;
-    height: 1000px;
-}
 
 .top-container {
     background-color: #A9A19E;
@@ -151,12 +153,6 @@ main {
     justify-content: space-evenly;
 }
 
-.top-container-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Flytta innehållet åt höger i denna container */
-}
 
 .top-container-left {
     display: flex;
@@ -212,6 +208,57 @@ ul {
     height: 280px;
 }
 
+.grid-container {
+    height: 680px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+}
+
+.grid-item {
+    padding: 10px; /* Inre utfyllnad för rutorna */
+    text-align: center; /* Textcentrering */
+}
+
+#item1 {
+    background-color: #C7DDEA;
+}
+
+#item2 {
+    background-color: white;
+}
+
+#item3 {
+    background-color: #EBEBEB;
+}
+
+#item4 {
+    background-color: white;
+}
+
+#item5 {
+    background-color: #F17949;
+}
+
+#item6 {
+    background-color: white;
+}
+
+
+footer {
+    background-color:#777574;
+    height: 408px;
+    display: flex;
+    justify-content: center;
+}
+
+#takemeup {
+    width: 1000px;
+    height: 68px;
+    background-color: #A9A19E;
+    border-radius: 0px;
+}
 
 button {
     font-family: 'Fira Sans', sans-serif;
@@ -219,11 +266,6 @@ button {
     width: 131px;
     height: 39px;
     border-radius:100px;
-}
-
-
-#join-now {
-    margin-left: 180px;
 }
 
 
