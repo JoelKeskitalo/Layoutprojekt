@@ -12,20 +12,20 @@ body {
     min-height: 100vh;
     position: relative;
 }
+/* omsluter hela sidan */ 
 
-main {
-    flex-grow: 1;
-}
+
+/* HEADER */ 
 
 .main-container {
     display: flex;
     height: 544px;
 }
-
 .main-container > div {
     flex: 1;
 }
 
+/* top left container start */
 .left-container {
     background-color: lightblue;
     background-image: url(https://raw.githubusercontent.com/JoelKeskitalo/Layoutprojekt/main/Bilder/family.png);
@@ -42,6 +42,33 @@ main {
     width: 314px;
 }
 
+h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 45px;
+    letter-spacing: -2;
+    margin-top: 60px;
+}
+
+.left-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    width: 70%;
+}
+
+span {
+    color: white;
+}
+
+
+#join-now {
+    margin-top: 30px;
+    border-style: none;
+    font-size: 11px;
+}
+/* top-left container end */
+
+/* top-right container start */
 .right-container {
     width: 50%;
     display: flex;
@@ -54,6 +81,31 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.top-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 11px;
+    line-height: 13.2px;
+    letter-spacing: -2%;
+    position: relative;
+}
+
+h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 32px;
+    color: white;
+    line-height: 41.31px;
+    letter-spacing: -2%;
+    align-items: center;
+    margin-top: -10px;
 }
 
 .bottom-right {
@@ -64,100 +116,74 @@ main {
     align-items: center;
 }
 
-h1 {
-    font-family: 'Frank Ruhl Libre', serif;
-    font-weight: 900;
-    font-size: 45px;
-    letter-spacing: -2;
-}
-
-h2 {
-    font-family: 'Frank Ruhl Libre', serif;
-    font-weight: 900;
-    font-size: 32px;
-    color: white;
-    line-height: 41.31px;
-    letter-spacing: -2%;
-    align-items: center;
-}
-
-h3 {
-    font-family: 'Frank Ruhl Libre', serif;
-    font-weight: 900;
-    font-size: 32px;
-    color: white;
-    line-height: 41.31px;
-    letter-spacing: -2%;
-    align-items: center;
-}
-
-h4 {
-    font-family: 'Frank Ruhl Libre', serif;
-    color: white;
-    font-weight: 900;
-    font-size: 45px;
-    letter-spacing: -2;
-    margin-left: 180px;
-    margin-top: 100px;
-}
-
-h5 {
-    font-family: 'Frank Ruhl Libre', serif;
-    color: white;
-    font-size: 45px;
-    line-height: 45px;
-    letter-spacing: -2%;
-}
-
-.left-text {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.right-text {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 13.2px;
-    letter-spacing: -2%;
+.bottom-right-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .bottom-right-text {
     font-family: 'Fira Sans', sans-serif;
-    font-weight: bold;
     font-size: 11px;
     line-height: 13.2px;
     letter-spacing: -2%;
+}
+
+h3 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 32px;
+    color: white;
+    line-height: 41.31px;
+    letter-spacing: -2%;
+    align-items: center;
+    margin-top: -10px;
+}
+/* top-right container end */
+
+.menu-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-
-
-#join-now {
-    margin-top: 30px;
+ul {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    list-style: none;
+    gap: 120px;
+    display: flex; 
 }
+/* END OF HEADER */ 
 
-#join-now2 {
-    margin-left: 170px;
-}
-
-
+/* MAIN */ 
 .top-container {
     background-color: #A9A19E;
     height: 612px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
-
 
 .top-container-left {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 50%;
+}
+
+h4 {
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+    font-size: 45px;
+    letter-spacing: -2;
+    margin-left: 160px;
+    margin-top: 100px;
+}
+
+#join-now2 {
+    margin-left: 160px;
+    border-style: none;
+    font-size: 11px;
 }
 
 .top-container-right {
@@ -168,26 +194,109 @@ h5 {
 
 .top-container-paragraph {
     font-family: 'Fira Sans', sans-serif;
-    font-weight: bold;
     width: 50%;
     font-size: 14px;
     line-height: 24px;
     margin-top: 100px;
+    font-weight: 500;
+    color: #00000099;
 }
 
-.menu-container {
+.overlap-containers {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: -154px;
+    margin-bottom: -154px;
+}
+
+.faces {
+    display: flex;
+    flex-direction: column;
+    height: 308px;
+    width: 256px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+h6 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* stylen på face-bilderna */
+.face-image {
+    width: 236px;
+    height: 150px;
+    margin: -15px auto 0;
+    border-radius: 3px;
+}
+
+.face-1 .face-image {
+    background-image: url(https://raw.githubusercontent.com/JoelKeskitalo/Layoutprojekt/mainbox/Bilder/child.png);
+    background-position: 50% -75%;
+    background-repeat: no-repeat;
+    background-size: 90px auto;
+    background-color: lightblue;
+}
+
+.face-2 .face-image {
+    background-image: url(https://raw.githubusercontent.com/JoelKeskitalo/Layoutprojekt/main/Bilder/adult.png);
+    background-position: 50% -5%; 
+    background-color: #FAB131;
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+}
+
+.face-3 .face-image {
+    background-image: url(https://raw.githubusercontent.com/JoelKeskitalo/Layoutprojekt/main/Bilder/old.png);
+    background-position: 50% -15%; 
+    background-repeat: no-repeat;
+    background-size: 130px auto;
+    background-color: #F17949
+}
+
+.face-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 18px;
+}
+
+/* placements för face-bilderna */
+.face1-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+.face1-content h6 {
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-
-ul {
-    list-style: none;
-    gap: 120px;
+.face2-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.face2-content h6 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
 
-    
+.face3-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.face3-content h6 {
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .bottom-container {
@@ -201,9 +310,20 @@ ul {
     text-align: center;
 }
 
+h5 {
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -2%;
+}
+
 .about-us-text {
     width: 442px;
+    font-weight: 500;
     height: 280px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #00000099;
 }
 
 .grid-container {
@@ -215,35 +335,106 @@ ul {
 }
 
 .grid-item {
-    padding: 10px; /* Inre utfyllnad för rutorna */
+    padding: 20px; /* Inre utfyllnad för rutorna */
     text-align: center; /* Textcentrering */
+}
+
+.grid-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000B2;
+    line-height: 20px;
+    align-items: center;
+    align-self: center;
 }
 
 #item1 {
     background-color: #C7DDEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #item2 {
     background-color: white;
+    color: #00000066;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 35px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 4fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+}
+#item2 .grid-text {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    align-self: center;
 }
 
 #item3 {
     background-color: #EBEBEB;
+    color: #00000066;
+    display: flex;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 35px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#item3 .grid-text {
+    grid-column: 2 / 3; /* från den andra, till den tredje */ 
+    grid-row: 2 / 3; 
 }
 
 #item4 {
     background-color: white;
+    color: #00000066;
+    display: flex;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 35px;
 }
 
 #item5 {
     background-color: #F17949;
+    color: #00000066;
+    display: flex;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 35px;
+    display: flex;
 }
 
 #item6 {
     background-color: white;
+    color: #00000066;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 35px;
+    display: grid;
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
+#item6 .grid-text {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; 
+}
+/* END OF MAIN */ 
 
+/* START OF FOOTER */ 
 footer {
     background-color:#777574;
     height: 408px;
@@ -255,7 +446,13 @@ footer {
     width: 1000px;
     height: 68px;
     background-color: #A9A19E;
+    color: #000000B2;
     border-radius: 0px;
+    border: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    align-items: center;
 }
 
 button {
@@ -266,30 +463,7 @@ button {
     border-radius:100px;
 }
 
+/* END OF FOOTER */ 
 
-.overlap-containers {
-    display: flex;
-    justify-content: center;
-    margin-top: -154px;
-    margin-bottom: -154px;
-}
 
-.faces {
-    background-color: white;
-    height: 308px;
-    width: 256px;
-}
 
-.face-image {
-    width: 236px;
-    height: 150px;
-    margin: -15px auto 0;
-}
-
-.face-1 .face-image {
-    background-image: url(https://raw.githubusercontent.com/JoelKeskitalo/Layoutprojekt/mainbox/Bilder/child.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100px auto;
-    background-color: lightblue;
-}
